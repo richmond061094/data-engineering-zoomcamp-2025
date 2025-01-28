@@ -23,8 +23,7 @@ services:
 #  -p 5432:5432 \
 #  postgres:13
 #
-#  docker run -it   -e POSTGRES_USER="root"   -e POSTGRES_PASSWORD="root"   -e POSTGRES_DB="root"   -v D:/Users/rmanuel/Documents/GitHub/data-engineering-zoomcamp-2025/Week\ 1/2_DOCKER_SQL/ny_taxi_postgres_data:/var/lib/postgresql/data -p 5432:5432 postgres:13
-
+#  docker run -it   -e POSTGRES_USER="root"   -e POSTGRES_PASSWORD="root"   -e POSTGRES_DB="ny_taxi"   -v D:/Users/rmanuel/Documents/GitHub/data-engineering-zoomcamp-2025/Week\ 1/2_DOCKER_SQL/ny_taxi_postgres_data:/vq
 
 docker run -it \
  -e POSTGRES_USER="root" \
@@ -33,3 +32,14 @@ docker run -it \
  -v D:/Users/rmanuel/Documents/GitHub/data-engineering-zoomcamp-2025/Week\ 1/2_DOCKER_SQL/ny_taxi_postgres_data:/var/lib/postgresql/data \
  -p 5432:5432 \
  postgres:13
+
+
+ #  wget https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/yellow_tripdata_2021-01.csv.gz
+
+ # gunzip yellow_tripdata_2021-01.csv.gz
+ # less yellow_tripdata_2021-01.csv
+ # head -n 100 yellow_tripdata_2021-01.csv
+ # head -n 100 yellow_tripdata_2021-01.csv > yellow_head_100.csv
+
+ # wc -l yellow_tripdata_2021-01.csv
+ # for counting lines
